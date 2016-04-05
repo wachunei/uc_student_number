@@ -1,4 +1,5 @@
 # UcStudentNumber
+[![Build Status](https://travis-ci.org/wachunei/uc_student_number.svg?branch=master)](https://travis-ci.org/wachunei/uc_student_number)
 
 Validate a Pontifical Catholic University of Chile student number.
 
