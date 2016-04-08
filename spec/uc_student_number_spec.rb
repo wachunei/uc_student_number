@@ -19,6 +19,13 @@ describe UcStudentNumber do
     end
   end
 
+  it 'validates a student number ending with J' do
+    student_numbers = %w(1263476J)
+    student_numbers.each do |student_number|
+      expect(UcStudentNumber.validate(student_number)).to be true
+    end
+  end
+
   it 'doesn\'t validate a short student number integer' do
     student_number = 10_637
     expect(UcStudentNumber.validate(student_number)).to be false
